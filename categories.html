@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Categories | JobNest</title>
+    <meta name="description" content="Browse job categories on JobNest." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="categories">
+    <header class="header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand" aria-label="JobNest home">
+          <span class="brand-mark">JN</span>
+          <span>JobNest</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="jobs.html">Find Jobs</a></li>
+          <li><a class="nav-link active" href="categories.html">Categories</a></li>
+          <li><a class="nav-link" href="saved-jobs.html">Saved Jobs</a></li>
+          <li><a class="nav-link" href="applications.html">Applications</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="login.html" data-auth-button>Login</a>
+          <a class="btn btn-outline" href="register.html" data-auth-button>Register</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <div class="page-crumb">Home / Categories</div>
+            <h1>Explore Job Categories</h1>
+          </div>
+          <a href="jobs.html" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3); background: transparent;">View All Jobs</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Find the right domain for your career</h2>
+            <p>From software engineering to marketing and AI, discover categories built for your ambition.</p>
+          </div>
+
+          <div class="grid-4" id="categoryGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>JobNest</h3>
+          <p>Job discovery made easy, tailored for future-ready professionals.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="jobs.html">Find Jobs</a></li>
+            <li><a href="saved-jobs.html">Saved Jobs</a></li>
+            <li><a href="applications.html">Applications</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li>hello@jobnest.in</li>
+            <li>+91 98765 43210</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">© 2026 JobNest. All rights reserved.</div>
+    </footer>
+
+    <script src="js/jobs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | JobNest</title>
+    <meta name="description" content="Contact JobNest for support or partnership inquiries." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="contact">
+    <header class="header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand" aria-label="JobNest home">
+          <span class="brand-mark">JN</span>
+          <span>JobNest</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="jobs.html">Find Jobs</a></li>
+          <li><a class="nav-link" href="categories.html">Categories</a></li>
+          <li><a class="nav-link" href="saved-jobs.html">Saved Jobs</a></li>
+          <li><a class="nav-link" href="applications.html">Applications</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="login.html" data-auth-button>Login</a>
+          <a class="btn btn-outline" href="register.html" data-auth-button>Register</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <div class="page-crumb">Home / Contact</div>
+            <h1>Contact Us</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-card">
+          <div class="form-grid">
+            <div>
+              <h3>Let’s talk</h3>
+              <p style="margin-top: 12px; color: var(--muted);">Whether you want help finding a role, improving your profile, or learning more about JobNest, we are happy to connect.</p>
+              <ul class="detail-list" style="margin-top: 20px;">
+                <li><strong>Email:</strong> hello@jobnest.in</li>
+                <li><strong>Phone:</strong> +91 98765 43210</li>
+                <li><strong>Location:</strong> Chandigarh, India</li>
+              </ul>
+            </div>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input class="input" id="contactName" type="text" required />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input class="input" id="contactEmail" type="email" required />
+              </div>
+              <div class="form-group">
+                <label for="contactMessageInput">Message</label>
+                <textarea class="textarea" id="contactMessageInput" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <div id="contactMessage" class="form-message success">Thank you for contacting JobNest. We will get back to you soon.</div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>JobNest</h3>
+          <p>Contact support to make your job search easier and more effective.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Find Jobs</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li>hello@jobnest.in</li>
+            <li>+91 98765 43210</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">© 2026 JobNest. All rights reserved.</div>
+    </footer>
+
+    <script src="js/jobs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

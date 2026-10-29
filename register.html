@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | JobNest</title>
+    <meta name="description" content="Create a JobNest account." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="register">
+    <header class="header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand" aria-label="JobNest home">
+          <span class="brand-mark">JN</span>
+          <span>JobNest</span>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="auth-card">
+          <div class="auth-header">
+            <h2>Create Account</h2>
+            <a class="small-link" href="login.html">Already have an account?</a>
+          </div>
+
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="registerName">Full Name</label>
+              <input class="input" id="registerName" type="text" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="registerEmail">Email</label>
+              <input class="input" id="registerEmail" type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label for="registerPassword">Password</label>
+              <input class="input" id="registerPassword" type="password" placeholder="Create a password" required />
+            </div>
+            <div class="form-group">
+              <label for="registerConfirmPassword">Confirm Password</label>
+              <input class="input" id="registerConfirmPassword" type="password" placeholder="Confirm your password" required />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+            <div id="registerMessage" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/jobs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

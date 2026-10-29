@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | JobNest</title>
+    <meta name="description" content="Manage and edit your JobNest profile." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="profile">
+    <header class="header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand" aria-label="JobNest home">
+          <span class="brand-mark">JN</span>
+          <span>JobNest</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="jobs.html">Find Jobs</a></li>
+          <li><a class="nav-link" href="categories.html">Categories</a></li>
+          <li><a class="nav-link" href="saved-jobs.html">Saved Jobs</a></li>
+          <li><a class="nav-link" href="applications.html">Applications</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="login.html" data-auth-button>Login</a>
+          <a class="btn btn-outline" href="register.html" data-auth-button>Register</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <div class="page-crumb">Home / Profile</div>
+            <h1>My Profile</h1>
+          </div>
+          <a href="jobs.html" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3); background: transparent;">Continue Search</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container profile-grid">
+          <aside class="profile-card">
+            <div class="avatar">👤</div>
+            <h3 style="text-align: center; margin-bottom: 12px;">Profile Card</h3>
+            <p style="text-align: center; color: var(--muted);">Keep your profile updated for better job recommendations.</p>
+          </aside>
+
+          <div class="profile-card">
+            <form id="profileForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input class="input" id="name" name="name" type="text" placeholder="Enter your full name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input class="input" id="email" name="email" type="email" placeholder="your@email.com" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input class="input" id="phone" name="phone" type="tel" placeholder="+91 9876543210" />
+                </div>
+                <div class="form-group">
+                  <label for="education">Education</label>
+                  <input class="input" id="education" name="education" type="text" placeholder="B.E. / MCA / B.Tech" />
+                </div>
+                <div class="form-group">
+                  <label for="skills">Skills</label>
+                  <input class="input" id="skills" name="skills" type="text" placeholder="HTML, CSS, JavaScript" />
+                </div>
+                <div class="form-group">
+                  <label for="experience">Experience</label>
+                  <input class="input" id="experience" name="experience" type="text" placeholder="0-2 Years" />
+                </div>
+                <div class="form-group">
+                  <label for="preferredCategory">Preferred Job Category</label>
+                  <input class="input" id="preferredCategory" name="preferredCategory" type="text" placeholder="Web Development" />
+                </div>
+                <div class="form-group">
+                  <label for="preferredLocation">Preferred Location</label>
+                  <input class="input" id="preferredLocation" name="preferredLocation" type="text" placeholder="Chandigarh" />
+                </div>
+              </div>
+
+              <div class="form-actions" style="justify-content: flex-start; margin-top: 10px;">
+                <button type="submit" class="btn btn-primary">Save Profile</button>
+              </div>
+              <div id="profileMessage" class="form-message success">Profile updated successfully.</div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>JobNest</h3>
+          <p>Build a stronger profile and discover job matches that fit you best.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="saved-jobs.html">Saved Jobs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@jobnest.in</li>
+            <li>+91 98765 43210</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">© 2026 JobNest. All rights reserved.</div>
+    </footer>
+
+    <script src="js/jobs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
